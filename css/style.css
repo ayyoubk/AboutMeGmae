@@ -10,13 +10,21 @@ header{
 }
 main{
     background-color: #feffde;
-    height: 200px;
+    
 }
 footer{
     background-color: #31326f;
     text-align: center;
     color: silver;
 }
+
+ol{
+	list-style: decimal;
+}
+ul {
+	list-style: disc;
+}
+
 h1{
     font-size: 50px;
     font-style: oblique;
@@ -36,4 +44,9 @@ main div{
     margin-top: 3%;
     font-family: cursive;
     font-size: 15px;
+    line-height: 25px;
+}
+b{
+    font-size: large;
+    font-weight: bold;
 }

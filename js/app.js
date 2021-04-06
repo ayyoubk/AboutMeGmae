@@ -5,6 +5,7 @@ alert('welcome '+userName);
 //console.log('user name is '+userName);
 
 function guessGame() {
+  let score=0;
   let answerOne=prompt('Do you think it is strange for a civil engineer to be a software developer as well?');
   answerOne=answerOne.toLowerCase();
   switch (answerOne) {
@@ -15,6 +16,7 @@ function guessGame() {
   case 'no':
   case 'n':
     alert('Right, Superman is a civil engineer too ..');
+    score++;
     break;
   default:
     alert('Nice try !');
@@ -28,6 +30,7 @@ function guessGame() {
   case 'yes':
   case 'y':
     alert('Thank you, but I think I need more effort and work');
+    score++;
     break;
   case 'no':
   case 'n':
@@ -45,6 +48,7 @@ function guessGame() {
   case 'yes':
   case 'y':
     alert('Yes, I really do :)');
+    score++;
     break;
   case 'no':
   case 'n':
@@ -60,6 +64,7 @@ function guessGame() {
   case 'yes':
   case 'y':
     alert('It\'s easy to guess Real Madrid is my favorite club');
+    score++;
     break;
   case 'no':
   case 'n':
@@ -68,26 +73,66 @@ function guessGame() {
   default:
     alert('Nice try !');
   }
-  //console.log(favTeam);
-  alert('Thanks for your time, '+userName);
+
+  let aboutMe=prompt('Do you think that I am an alien?');
+  aboutMe=aboutMe.toLowerCase();
+  switch (aboutMe) {
+  case 'yes':
+  case 'y':
+    alert('Oh really?');
+    break;
+  case 'no':
+  case 'n':
+    alert('Yes!!');
+    score++;
+    break;
+  default:
+    alert('Nice try !');
+  }
+
+  let numberIs=Math.floor(Math.random() * 11);
+  for (let i = 1; i<=4 ; i++) {
+    let guessNum= prompt('Enter a number from 0 to 10');
+    guessNum =parseInt(guessNum);
+    while (guessNum !== 0 && guessNum !== 1 && guessNum !== 2 && guessNum !== 3 && guessNum !== 4 && guessNum !== 5 && guessNum !== 6 && guessNum !== 7 && guessNum !== 8 && guessNum !== 9 && guessNum !== 10) {
+      guessNum= prompt(' You should enter a number from 0 to 10');
+      guessNum =parseInt(guessNum);
+    }
+    if (guessNum === numberIs) {
+      alert('Well done, you hit the right Number');
+      score=score+1;
+      break;
+    }else if (guessNum > numberIs){
+      alert('too High');
+    }else {
+      alert ('too Low');
+    }
+    if (i===4) {
+      alert('Well, You have exhausted all attempts, the correct answer is ' + numberIs);
+    }
+  }
+  let cars = ['bmw', 'audi', 'ford','honda'];
+  //console.log(cars[0]);
+  for (let atmp = 1; atmp <=6; atmp++){
+    let favCar=prompt('Guess my favorite car');
+    if (favCar.toLowerCase() === cars[0] || favCar.toLowerCase() === cars[4] || favCar.toLowerCase() === cars[2] || favCar.toLowerCase() === cars[3]) {
+      alert('Great, correct answer !!');
+      score++;
+      break;
+    }
+    if (atmp===6) {
+      alert('Well, You have exhausted all attempts, My favorite car are ' + cars);
+    }
+  }
+
+
+  alert('Thanks for your time, '+userName +' You get '+ score +' / 7');
 }
 
-
-let aboutMe=prompt('Do you want to guess some information about the owner?');
-aboutMe=aboutMe.toLowerCase();
-switch (aboutMe) {
-case 'yes':
-case 'y':
+let game =confirm('Do you want to Play Guessing Game');
+if (game) {
   alert('Well let\'s start');
   guessGame();
-  break;
-case 'no':
-case 'n':
-  alert('Well, have a nice day');
-  break;
-default:
-  alert('Nice try !');
 }
-//console.log(aboutMe);
 
-
+// Math.floor(Math.random() * 11); // fo r random number  0-10
