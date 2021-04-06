@@ -12,5 +12,12 @@ Links and Resources
 
 Reflections and Comments
 
-*we use if ,switch ,confirm,prompt then write some JavaScript and CSS line*
-*this project take laike two hours*
+### 5/4/2021
+*I use if ,switch ,confirm,prompt then write some JavaScript and CSS line*
+*this project take like two hours*
+
+### 6/4/2021
+*add some question to the game contin arrays that we had learn today*
+*add  (for-while-if) in the game as one block*
+*add all qquestions to a functions*
+*today work took like 3 hours*
