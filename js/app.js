@@ -116,7 +116,7 @@ if (game) {
   let cars = ['bmw', 'audi', 'ford','honda'];
   //console.log(cars[0]);
   lastQus : for (let atmp = 1; atmp <=6; atmp++){
-    let favCar =prompt('Guess my favorite car').toLowerCase();
+        let favCar =prompt('Guess my favorite car').toLowerCase();
     for (let iii =0;iii < cars.length ; iii++ ){
       if (favCar=== cars[iii]) {
         alert('Great, correct answer !!');
