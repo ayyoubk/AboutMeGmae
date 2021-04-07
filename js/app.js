@@ -82,7 +82,25 @@ function qFour(){
 
 }
 
+function qFive(){
+  let aboutMe=prompt('Do you think that I am an alien?');
+  aboutMe=aboutMe.toLowerCase();
+  switch (aboutMe) {
+  case 'yes':
+  case 'y':
+    alert('Oh really?');
+    break;
+  case 'no':
+  case 'n':
+    alert('Yes!!');
+    score++;
+    break;
+  default:
+    alert('Nice try !');
+  }
 
+
+}
 
 
 
