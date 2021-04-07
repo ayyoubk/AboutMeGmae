@@ -102,37 +102,7 @@ function qFive(){
 
 }
 
-
-
-
-let userName=prompt('What is your name ?');
-alert('welcome '+userName);
-//console.log('user name is '+userName);
-
-let game =confirm('Do you want to Play Guessing Game');
-if (game) {
-  alert('Well let\'s start');
-  qOne();
-  qTwo();
-  qThree();
-  qFour();
-  qFive();
-  } 
-
-
-  
-
-  //console.log(answerOne);
-  
-  
-
-  //console.log(answerTwo);
-    
-  //console.log(football);
- 
-
- 
-
+function qSix(){
   let numberIs=Math.floor(Math.random() * 11);
   for (let i = 1; i<=4 ; i++) {
     let guessNum= prompt('Enter a number from 0 to 10');
@@ -154,24 +124,44 @@ if (game) {
       alert('Well, You have exhausted all attempts, the correct answer is ' + numberIs);
     }
   }
-  let cars = ['bmw', 'audi', 'ford','honda'];
-  //console.log(cars[0]);
-  lastQus : for (let atmp = 1; atmp <=6; atmp++){
-    let favCar =prompt('Guess my favorite car').toLowerCase();
-    for (let iii =0;iii < cars.length ; iii++ ){
-      if (favCar=== cars[iii]) {
-        alert('Great, correct answer !!');
-        score++;
-        break lastQus;
-      }
-    }
-    if (atmp===6) {
-      alert('Well, You have exhausted all attempts, My favorite car are ' + cars);
-    }
-  }
 
 
-  alert('Thanks for your time, '+userName +' You get '+ score +' / 7');
+}
+
+
+
+let userName=prompt('What is your name ?');
+alert('welcome '+userName);
+//console.log('user name is '+userName);
+
+let game =confirm('Do you want to Play Guessing Game');
+if (game) {
+  alert('Well let\'s start');
+  qOne();
+  qTwo();
+  qThree();
+  qFour();
+  qFive();
+  qSix();
+  qSeven();
+} 
+
+
+  
+
+  //console.log(answerOne);
+  
+  
+
+  //console.log(answerTwo);
+    
+  //console.log(football);
+ 
+
+ 
+
+  
+
 
 
 
