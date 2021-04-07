@@ -1,4 +1,23 @@
-'use strict';
+'use strict'; 
+
+let score=0;
+function qOne(){
+  let answerOne=prompt('Do you think it is strange for a civil engineer to be a software developer as well?');
+answerOne=answerOne.toLowerCase();
+switch (answerOne) {
+case 'yes':
+case 'y':
+  alert('No, this is not strange, I am a civil engineer, passionate about software development');
+  break;
+case 'no':
+case 'n':
+  alert('Right, Superman is a civil engineer too ..');
+  score++;
+  break;
+default:
+  alert('Nice try !');
+}
+}
 
 let userName=prompt('What is your name ?');
 alert('welcome '+userName);
@@ -7,22 +26,11 @@ alert('welcome '+userName);
 let game =confirm('Do you want to Play Guessing Game');
 if (game) {
   alert('Well let\'s start');
-  let score=0;
-  let answerOne=prompt('Do you think it is strange for a civil engineer to be a software developer as well?');
-  answerOne=answerOne.toLowerCase();
-  switch (answerOne) {
-  case 'yes':
-  case 'y':
-    alert('No, this is not strange, I am a civil engineer, passionate about software development');
-    break;
-  case 'no':
-  case 'n':
-    alert('Right, Superman is a civil engineer too ..');
-    score++;
-    break;
-  default:
-    alert('Nice try !');
+  qOne();
   }
+
+
+  
 
   //console.log(answerOne);
 
@@ -132,7 +140,7 @@ if (game) {
 
   alert('Thanks for your time, '+userName +' You get '+ score +' / 7');
 
-}
+
 
 // Math.floor(Math.random() * 11); // fo r random number  0-10
 
