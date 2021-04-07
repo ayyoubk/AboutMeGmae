@@ -115,12 +115,14 @@ if (game) {
   }
   let cars = ['bmw', 'audi', 'ford','honda'];
   //console.log(cars[0]);
-  for (let atmp = 1; atmp <=6; atmp++){
-    let favCar=prompt('Guess my favorite car');
-    if (favCar.toLowerCase() === cars[0] || favCar.toLowerCase() === cars[4] || favCar.toLowerCase() === cars[2] || favCar.toLowerCase() === cars[3]) {
-      alert('Great, correct answer !!');
-      score++;
-      break;
+  lastQus : for (let atmp = 1; atmp <=6; atmp++){
+    let favCar =prompt('Guess my favorite car').toLowerCase();
+    for (let iii =0;iii < cars.length ; iii++ ){
+      if (favCar=== cars[iii]) {
+        alert('Great, correct answer !!');
+        score++;
+        break lastQus;
+      }
     }
     if (atmp===6) {
       alert('Well, You have exhausted all attempts, My favorite car are ' + cars);
@@ -133,3 +135,4 @@ if (game) {
 }
 
 // Math.floor(Math.random() * 11); // fo r random number  0-10
+
