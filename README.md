@@ -21,3 +21,9 @@ Reflections and Comments
 *add  (for-while-if) in the game as one block*
 *add all qquestions to a functions*
 *today work took like 3 hours*
+
+### 7/4/2021
+
+*I was Navigator on : [here](https://github.com/ayyoubk/AboutMeGmae/pull/2)*
+
+*I was Driver on : [here](https://github.com/afraawael/About-me/pull/1)*
