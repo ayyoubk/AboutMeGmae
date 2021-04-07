@@ -63,44 +63,6 @@ function qThree(){
 }
 
 
-function qFour(){
-  let favTeam=prompt('Do you think my favorite team is Real Madrid ?');
-  favTeam=favTeam.toLowerCase();
-  switch (favTeam) {
-  case 'yes':
-  case 'y':
-    alert('It\'s easy to guess Real Madrid is my favorite club');
-    score++;
-    break;
-  case 'no':
-  case 'n':
-    alert('Unfortunately, I am a Real Madrid fan :)');
-    break;
-  default:
-    alert('Nice try !');
-  }
-
-}
-
-function qFive(){
-  let aboutMe=prompt('Do you think that I am an alien?');
-  aboutMe=aboutMe.toLowerCase();
-  switch (aboutMe) {
-  case 'yes':
-  case 'y':
-    alert('Oh really?');
-    break;
-  case 'no':
-  case 'n':
-    alert('Yes!!');
-    score++;
-    break;
-  default:
-    alert('Nice try !');
-  }
-
-
-}
 
 
 
