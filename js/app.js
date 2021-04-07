@@ -19,21 +19,7 @@ default:
 }
 }
 
-let userName=prompt('What is your name ?');
-alert('welcome '+userName);
-//console.log('user name is '+userName);
-
-let game =confirm('Do you want to Play Guessing Game');
-if (game) {
-  alert('Well let\'s start');
-  qOne();
-  }
-
-
-  
-
-  //console.log(answerOne);
-
+function qTwo(){
   let answerTwo=prompt('Do you think I am doing well with software development ?');
   answerTwo=answerTwo.toLowerCase();
   switch (answerTwo) {
@@ -50,7 +36,12 @@ if (game) {
     alert('Nice try !');
   }
 
-  //console.log(answerTwo);
+
+
+}
+
+
+function qThree(){
 
   let football=prompt('Do you think I watch football matches ?');
   football=football.toLowerCase();
@@ -67,7 +58,12 @@ if (game) {
   default:
     alert('Nice try !');
   }
-  //console.log(football);
+
+
+}
+
+
+function qFour(){
   let favTeam=prompt('Do you think my favorite team is Real Madrid ?');
   favTeam=favTeam.toLowerCase();
   switch (favTeam) {
@@ -84,6 +80,9 @@ if (game) {
     alert('Nice try !');
   }
 
+}
+
+function qFive(){
   let aboutMe=prompt('Do you think that I am an alien?');
   aboutMe=aboutMe.toLowerCase();
   switch (aboutMe) {
@@ -99,6 +98,40 @@ if (game) {
   default:
     alert('Nice try !');
   }
+
+
+}
+
+
+
+
+let userName=prompt('What is your name ?');
+alert('welcome '+userName);
+//console.log('user name is '+userName);
+
+let game =confirm('Do you want to Play Guessing Game');
+if (game) {
+  alert('Well let\'s start');
+  qOne();
+  qTwo();
+  qThree();
+  qFour();
+  qFive();
+  } 
+
+
+  
+
+  //console.log(answerOne);
+  
+  
+
+  //console.log(answerTwo);
+    
+  //console.log(football);
+ 
+
+ 
 
   let numberIs=Math.floor(Math.random() * 11);
   for (let i = 1; i<=4 ; i++) {
