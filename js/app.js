@@ -152,23 +152,29 @@ function qSeven(){
 
 }
 
+function guessGame(){
+
+  let game =confirm('Do you want to Play Guessing Game');
+  if (game) {
+    alert('Well let\'s start');
+    qOne();
+    qTwo();
+    qThree();
+    qFour();
+    qFive();
+    qSix();
+    qSeven();
+
+  } 
+
+}
+
+
 let userName=prompt('What is your name ?');
 alert('welcome '+userName);
 //console.log('user name is '+userName);
 
-let game =confirm('Do you want to Play Guessing Game');
-if (game) {
-  alert('Well let\'s start');
-  qOne();
-  qTwo();
-  qThree();
-  qFour();
-  qFive();
-  qSix();
-  qSeven();
-} 
-
-
+guessGame();
   
 
   //console.log(answerOne);
