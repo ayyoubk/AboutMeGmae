@@ -129,6 +129,28 @@ function qSix(){
 }
 
 
+function qSeven(){
+
+  let cars = ['bmw', 'audi', 'ford','honda'];
+  //console.log(cars[0]);
+  lastQus : for (let atmp = 1; atmp <=6; atmp++){
+    let favCar =prompt('Guess my favorite car').toLowerCase();
+    for (let iii =0;iii < cars.length ; iii++ ){
+      if (favCar=== cars[iii]) {
+        alert('Great, correct answer !!');
+        score++;
+        break lastQus;
+      }
+    }
+    if (atmp===6) {
+      alert('Well, You have exhausted all attempts, My favorite car are ' + cars);
+    }
+  }
+
+
+  alert('Thanks for your time, '+userName +' You get '+ score +' / 7');
+
+}
 
 let userName=prompt('What is your name ?');
 alert('welcome '+userName);
