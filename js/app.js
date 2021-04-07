@@ -4,7 +4,9 @@ let userName=prompt('What is your name ?');
 alert('welcome '+userName);
 //console.log('user name is '+userName);
 
-function guessGame() {
+let game =confirm('Do you want to Play Guessing Game');
+if (game) {
+  alert('Well let\'s start');
   let score=0;
   let answerOne=prompt('Do you think it is strange for a civil engineer to be a software developer as well?');
   answerOne=answerOne.toLowerCase();
@@ -127,12 +129,7 @@ function guessGame() {
 
 
   alert('Thanks for your time, '+userName +' You get '+ score +' / 7');
-}
 
-let game =confirm('Do you want to Play Guessing Game');
-if (game) {
-  alert('Well let\'s start');
-  guessGame();
 }
 
 // Math.floor(Math.random() * 11); // fo r random number  0-10
