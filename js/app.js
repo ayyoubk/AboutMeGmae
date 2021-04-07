@@ -19,21 +19,7 @@ default:
 }
 }
 
-let userName=prompt('What is your name ?');
-alert('welcome '+userName);
-//console.log('user name is '+userName);
-
-let game =confirm('Do you want to Play Guessing Game');
-if (game) {
-  alert('Well let\'s start');
-  qOne();
-  }
-
-
-  
-
-  //console.log(answerOne);
-
+function qTwo(){
   let answerTwo=prompt('Do you think I am doing well with software development ?');
   answerTwo=answerTwo.toLowerCase();
   switch (answerTwo) {
@@ -50,7 +36,12 @@ if (game) {
     alert('Nice try !');
   }
 
-  //console.log(answerTwo);
+
+
+}
+
+
+function qThree(){
 
   let football=prompt('Do you think I watch football matches ?');
   football=football.toLowerCase();
@@ -67,7 +58,12 @@ if (game) {
   default:
     alert('Nice try !');
   }
-  //console.log(football);
+
+
+}
+
+
+function qFour(){
   let favTeam=prompt('Do you think my favorite team is Real Madrid ?');
   favTeam=favTeam.toLowerCase();
   switch (favTeam) {
@@ -84,6 +80,9 @@ if (game) {
     alert('Nice try !');
   }
 
+}
+
+function qFive(){
   let aboutMe=prompt('Do you think that I am an alien?');
   aboutMe=aboutMe.toLowerCase();
   switch (aboutMe) {
@@ -100,6 +99,10 @@ if (game) {
     alert('Nice try !');
   }
 
+
+}
+
+function qSix(){
   let numberIs=Math.floor(Math.random() * 11);
   for (let i = 1; i<=4 ; i++) {
     let guessNum= prompt('Enter a number from 0 to 10');
@@ -121,6 +124,13 @@ if (game) {
       alert('Well, You have exhausted all attempts, the correct answer is ' + numberIs);
     }
   }
+
+
+}
+
+
+function qSeven(){
+
   let cars = ['bmw', 'audi', 'ford','honda'];
   //console.log(cars[0]);
   lastQus : for (let atmp = 1; atmp <=6; atmp++){
@@ -139,6 +149,47 @@ if (game) {
 
 
   alert('Thanks for your time, '+userName +' You get '+ score +' / 7');
+
+}
+
+function guessGame(){
+
+  let game =confirm('Do you want to Play Guessing Game');
+  if (game) {
+    alert('Well let\'s start');
+    qOne();
+    qTwo();
+    qThree();
+    qFour();
+    qFive();
+    qSix();
+    qSeven();
+
+  } 
+
+}
+
+
+let userName=prompt('What is your name ?');
+alert('welcome '+userName);
+//console.log('user name is '+userName);
+
+guessGame();
+  
+
+  //console.log(answerOne);
+  
+  
+
+  //console.log(answerTwo);
+    
+  //console.log(football);
+ 
+
+ 
+
+  
+
 
 
 
