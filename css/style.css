@@ -1,6 +1,8 @@
 body{
     margin: auto;
     height: 100%;
+    background-color: #feffde;
+    color: #364547;
 }
 header{
     height: 55px;
@@ -8,14 +10,12 @@ header{
     text-align: center;
     vertical-align: middle;
 }
-main{
-    background-color: #feffde;
-    
-}
+
 footer{
-    background-color: #31326f;
+    background-color: #2f5d62;
     text-align: center;
-    color: silver;
+    color: #feffde;
+    height: 25px ;
 }
 
 ol{
@@ -49,4 +49,8 @@ main div{
 b{
     font-size: large;
     font-weight: bold;
+}
+#subhead{
+    text-align: center;
+    margin-top: 10px;
 }
